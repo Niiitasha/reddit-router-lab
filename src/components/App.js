@@ -21,29 +21,29 @@ class App extends Component {
 
     const gridStyle = this.props.posts.map((post) => (
       <div className = "gridS">
-      <Listview post= {post} key= {post.thumbnail} />
+      <Gridview post= {post} key= {post.thumbnail} />
       </div>
     ));
 
     return(
-      <Router>
+
+     <Router>
      <div className = "App">
-     <h1>Reddit</h1>
+     <h1>Rich Man's Reddit</h1>
 
-     <Link to="/listview">List</Link>{' '}
-     <Link to="/gridview">Grid</Link>
+     <Link to="/Listview">List</Link>{" "}
+     <Link to="/Gridview">Grid</Link>
 
-    </div>
 
-     <Switch>
-       <Route path="/listview" component= "Listview" />
-        {listStyle}
 
-      <Route path="/gridview" component= "Gridview" />
-        {gridStyle}
+    <Switch>
+       <Route path="/Listview" component= {listStyle} />
+       <Route path="/Gridview" component= {gridStyle} />
 
      </Switch>
+     </div>
      </Router>
+
     );
 }
 }

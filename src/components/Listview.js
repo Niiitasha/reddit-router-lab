@@ -7,13 +7,12 @@ render(){
 
 return(
 <div>
-     <div className = "List">
-     <img src={this.props.post.thumbnail} />
+  <div className = "List">
+
      <div className = "BlogItem">
-     <h3 className ="Title">{this.props.post.title}</h3>
-     <a className="Article" href={this.props.post.url}>Article</a>
+     <a className="Article" href={this.props.post.url}>README</a>
     </div>
-</div>
+  </div>
 </div>
 );
 }

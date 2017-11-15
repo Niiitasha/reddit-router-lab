@@ -6,11 +6,12 @@ class Gridview extends Component {
 render(){
 
 return(
-<div>
   <div className = "Grid" >
-    <img src ={this.props.posts.thumbnail} />
+    <div className = "BlogItem">
+    <a className="Article" href={this.props.post.url}>README</a>
+   </div>
   </div>
-</div>
+
 
 );
 }
